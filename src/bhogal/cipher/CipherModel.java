@@ -11,7 +11,7 @@ public class CipherModel {
 	}
 	
 	
-	public void typeChange (String type, String p)throws NumberFormatException { // exception 
+	public void typeChange (String type, String p)throws NumberFormatException, exceptions { // exception 
 		switch(type) {
 		case "shift" :
 			this.m = new MonoAlphabeticCypher();
@@ -28,5 +28,8 @@ public class CipherModel {
 	
 	public String decrypt(String txt) {
 		return this.m.decrypt(txt);
+	}
+	public String encrypt(String text) {
+		return this.m.encrypt(text);
 	}
 }
